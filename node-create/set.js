@@ -25,7 +25,7 @@ passChecker()
 function passTester(path){
     
     
-    fs.stat('../src/data', (err, stats) => {
+    fs.stat(path, (err, stats) => {
         if (err) {
         console.error('This folder doesn`t exist')
         return
