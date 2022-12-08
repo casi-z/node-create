@@ -1,0 +1,14 @@
+{
+  "name": "create",
+  "version": "1.0.0",
+  "description": "This file can  create React components and define global variables for the WHOLE  project",
+  "main": "create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add":"node create",
+    "set":"node set"
+
+  },
+  "author": "casi__z",
+  "license": "ISC"
+}
