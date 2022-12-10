@@ -5,9 +5,9 @@
 
 Для начала работы введите команды
 
-#npm i node-create
+# npm i node-create
 и
-#cd node_modules/node-create
+# cd node_modules/node-create
 Дополнительных библиотек устанавливать не нужно 
 
 Используйте команду 
