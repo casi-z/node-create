@@ -1,0 +1,35 @@
+{
+	"path": "components",
+	"onPrefix": {
+		"default":{
+			"files": [
+				{
+					"name": "#{componentName}.scss",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\";",
+						"$img: \"../#{varPath}../public/img\";",
+						"$fonts: \"../#{varPath}../public/fonts\";"
+					]
+				},
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.scss'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	}
+}

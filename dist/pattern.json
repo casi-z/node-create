@@ -1,0 +1,586 @@
+{
+	"jsx_": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.css'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+	"jsx_mui": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import * as S from './#{componentName}.style'",
+						"import { Box } from '@mui/material'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <S._#{componentName} className=\"#{componentName}\">",
+						"         ",
+						"      </S._#{componentName}>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.style.jsx",
+					"text": [
+						"import { Box, styled } from '@mui/material'",
+						"",
+						"export const _#{componentName} = styled(Box)(`",
+						"",
+						"    //Write your styles here",
+						"",
+						"`)"
+					]
+				}
+			]
+		},
+		"small": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						
+						"import { Box } from '@mui/material'",
+						"",
+						"const { log } = console",
+						"",
+						"const _#{componentName} = styled(Box)(`",
+						"",
+						"    //Write your styles here",
+						"",
+						"`)",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <_#{componentName} className=\"#{componentName}\">",
+						"         ",
+						"      </_#{componentName}>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}	
+	},
+
+	"jsx_css": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.css'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.css",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\";",
+						"$img: \"../#{varPath}../public/img\";",
+						"$fonts: \"../#{varPath}../public/fonts\";",
+						".#{componentName} {",
+						"    ",
+						"}"
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.scss'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+
+	"jsx_scss": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.scss'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.scss",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\";",
+						"$img: \"../#{varPath}../public/img\";",
+						"$fonts: \"../#{varPath}../public/fonts\";",
+						".#{componentName} {",
+						"    ",
+						"}"
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.scss'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+	
+	"jsx_sass": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.sass'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.sass",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\"",
+						"$img: \"../#{varPath}../public/img\"",
+						"$fonts: \"../#{varPath}../public/fonts\"",
+						".#{componentName}",
+						"    ",
+						""
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.jsx",
+					"text": [
+						"import './#{componentName}.sass'",
+						"",
+						"const { log } = console",
+						"",
+						"function #{componentName}({ props }) {",
+						"",
+						"   return(",
+						"      <div className=\"#{componentName}\">",
+						"         ",
+						"      </div>",
+						"   )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+
+	"tsx_": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import './#{componentName}.css'",
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}		
+	},
+
+	"tsx_mui": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import * as S from './#{componentName}.style'",
+						"import { ReactChild, FC } from 'react'",
+						"import { Box } from '@mui/material'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"      <S._#{componentName} className=\"#{componentName}\">",
+						"         ",
+						"      </S._#{componentName}>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.style.tsx",
+					"text": [
+						"import { Box, styled } from '@mui/material'",
+						"",
+						"export const _#{componentName} = styled(Box)(`",
+						"",
+						"    //Write your styles here",
+						"",
+						"`)"
+					]
+				}
+			]
+		},
+		"small": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import * as S from './#{componentName}.style'",
+						"import { ReactChild, FC } from 'react'",
+						"import { Box } from '@mui/material'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const _#{componentName} = styled(Box)(`",
+						"",
+						"    //Write your styles here",
+						"",
+						"`)",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]	
+		}		
+	},
+
+	"tsx_css": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import './#{componentName}.css'",
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.css",
+					"text": [
+						".#{componentName} {",
+						"    ",
+						"}"
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+
+	"tsx_scss": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.scss",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\";",
+						"$img: \"../#{varPath}../public/img\";",
+						"$fonts: \"../#{varPath}../public/fonts\";",
+						".#{componentName} {",
+						"    ",
+						"}"
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	},
+	
+	"tsx_sass": {
+		"default": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				},
+				{
+					"name": "#{componentName}.sass",
+					"text": [
+						"@import \"../#{varPath}scss/var.scss\"",
+						"$img: \"../#{varPath}../public/img\"",
+						"$fonts: \"../#{varPath}../public/fonts\"",
+						".#{componentName}",
+						"    ",
+						""
+					]
+				}
+			]
+		},
+		"nostyles": {
+			"files": [
+				{
+					"name": "#{componentName}.tsx",
+					"text": [
+						"import { ReactChild, FC } from 'react'",
+						"",
+						"const { log } = console",
+						"",
+						"interface #{componentName}Props {",
+						"   ",
+						"   children?: ReactChild,",
+						"   ",
+						"}",
+						"",
+						"const #{componentName}: FC<#{componentName}Props> = ({ children }) => {",
+						"",
+						"    return(",
+						"       <div className=\"#{componentName}\">",
+						"          ",
+						"       </div>",
+						"    )",
+						"}",
+						"export default #{componentName}"
+					]
+				}
+			]
+		}
+	}	
+}

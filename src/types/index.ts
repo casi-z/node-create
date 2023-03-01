@@ -1,0 +1,3 @@
+interface ISettings {
+	name: string,
+}
