@@ -13,6 +13,7 @@
 ![image](https://user-images.githubusercontent.com/95171553/222174838-cf303611-f4b0-43d4-8c0f-7bcb0c8cfb1d.png)
 
 
+## Обзор шаблона компонента
 Используйте команду 
 
 # npm run set ПУТЬ_ПАПКИ 
