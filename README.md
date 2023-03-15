@@ -6,14 +6,18 @@
 Для начала работы введите команды
 
 #### npm i node-create
-#### cd node_modules/node-create
+#### cd node_modules/node-create/dist
 #### npm run init
  
 Вам будет предложено настроить шаблон компонента, ответив на несколько вопросов
 ![image](https://user-images.githubusercontent.com/95171553/222174838-cf303611-f4b0-43d4-8c0f-7bcb0c8cfb1d.png)
 
+после этого в корне вашего приложения будет создан файл node-create-settings.json, он содержит шаблон по которому будет создан компонент
 
-## Обзор шаблона компонента
+## Обзор файла node-create-settings.json. Создание первого компонента
+
+![image]()
+
 Используйте команду 
 
 # npm run set ПУТЬ_ПАПКИ 
